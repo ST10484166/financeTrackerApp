@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Income Input -->
+        <EditText
+            android:id="@+id/incomeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your income"
+            android:inputType="numberDecimal"/>
+
+        <!-- Expense Inputs: 4 categories -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Expenses:"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <!-- Expenses Row -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/expense1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Food"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/expenseAmount1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Amount"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/expense2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Entertainment"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/expenseAmount2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Amount"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/expense3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Bills"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/expenseAmount3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Amount"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/expense4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Transport"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/expenseAmount4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="Amount"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <!-- end of expenses !-->
+
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Balance"
+            android:layout_marginTop="20dp"/>
+
+        <!-- textView Outputs -->
+        <TextView
+            android:id="@+id/outputIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Income: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/outputExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Expenses: "
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/outputBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance: "
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/feedbackMessage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <!-- End of textView outputs !-->
+
+    </LinearLayout>
+
